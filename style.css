@@ -1,0 +1,128 @@
+body{
+    background-color: #010016;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 6rem;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(20, 20, 20);
+}
+
+input[type="checkbox"]{
+    visibility: hidden;
+}
+
+#switch-label{
+    display: block;
+    height: 3rem;
+    width: 6rem;
+    background-color: #d3d4d4;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 20px #d1d0d0;
+    border-radius: 50px;
+    position: relative;
+}
+
+#switch-label::after{
+    content: "";
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgb(140, 67, 224);
+    border-radius: 50px;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    transition: 0.5s;
+}
+
+input:checked + #switch-label:after{
+    transform: translateX(120%);
+}
+
+input:checked + #switch-label{
+    background-color: rgb(255, 157, 0);
+    box-shadow: 0 0 40px #ffbf00;
+}
+
+.redText{
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 
+    0 0 15px #e64900, 
+    0 0 20px #e64900, 
+    0 0 25px #e64900, 
+    0 0 30px #e64900, 
+    0 0 35px #e64900;
+    transition: all 0.3s;
+}
+
+.greenText{
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 
+    0 0 15px #41e600, 
+    0 0 20px #41e600, 
+    0 0 25px #41e600, 
+    0 0 30px #41e600, 
+    0 0 35px #41e600;
+    transition: all 0.3s;
+}
+
+.blueText{
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 
+    0 0 15px #0073e6, 
+    0 0 20px #0073e6, 
+    0 0 25px #0073e6, 
+    0 0 30px #0073e6, 
+    0 0 35px #0073e6;
+    transition: all 0.3s;
+}
+
+.yellowText{
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 
+    0 0 15px #e6e200, 
+    0 0 20px #e6e200, 
+    0 0 25px #e6e200, 
+    0 0 30px #e6e200, 
+    0 0 35px #e6e200;
+    transition: all 0.3s;
+}
+
+#flame{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10px 50px 50px 50px;
+    transform: rotate(45deg);
+}
+
+.flame-color{
+    background: linear-gradient(to top, rgb(236, 131, 10), rgb(238, 42, 42));
+    box-shadow: 0 0 70px 10px rgb(248, 153, 9);
+    transition: all 0.3s;
+}
+
+.filament{
+    height: 5px;
+    border: 2px solid gray;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.candle{
+    border: 2px solid #fff;
+    width: 3rem;
+    height: 7rem;
+    border-radius: 10px;
+}
+
