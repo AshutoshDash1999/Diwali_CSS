@@ -126,3 +126,26 @@ input:checked + #switch-label{
     border-radius: 10px;
 }
 
+footer{
+    background: #2d0131;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+footer h2{
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+    display: inline;
+}
+
+footer p a{
+    text-decoration: none;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
